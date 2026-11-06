@@ -94,6 +94,16 @@ Os pedidos são adicionados dinamicamente em uma tabela com histórico.
 
 ---
 
+## 🎓 Contexto Acadêmico
+Todos estes projetos foram desenvolvidos como exercícios acadêmicos durante a
+graduação em Sistemas de Informação. 
+
+## 🎨 Observação
+Grande parte dos projetos foram desenvolvidos durante as aulas, com orientação do professor.
+A estrutura visual, arquivos de CSS, layouts e imagens iniciais foram
+fornecidos como base, enquanto a lógica em JavaScript, cálculos, validações
+e manipulação do DOM foram implementados pelo aluno.
+
 ## 👨‍💻 Autor
 
-**Felipe Slavic** · [github.com/felipedSlavic](https://github.com/felipedSlavic) · FIAP — SI · 2024
+**Felipe Slavic** · [github.com/felipedSlavic](https://github.com/felipedSlavic) · FIAP — SI · 2025
