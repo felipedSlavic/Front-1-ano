@@ -1,0 +1,16 @@
+<div class="col-md my-2">            
+    <div class="card">
+        <div class="card-body">
+            <h6 class="card-title text-danger"></h6>
+            <div class="d-flex justify-content-between">
+            <p class="m-0">Ano: </p>
+            <p class="m-0">Km rodados: </p>
+            </div>        
+            <div class="flex justify-content-between">
+            <p class="m-0">Carga Total:
+            <p class="m-0">Autonomia: 
+            </div> 
+            <h3 class="text-center text-danger my-4"></h3>       
+        </div>
+    </div>           
+</div>

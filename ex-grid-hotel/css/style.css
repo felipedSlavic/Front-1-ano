@@ -1,0 +1,61 @@
+/* Fonte e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* CRIAR A QUANTIDADE DE COLUNAS (REPETIU 4X DE COLUNAS DE 1 FRAÇÃO DO ESPAÇO */
+  grid-auto-rows: minmax(150px, auto); /* DEFINE A ALTURA PADRÃO DAS LINHAS QUE SÃO GERADAS AUTOMATICAMENTE PELO GRID */
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* DEIXAR AS BOX EM COLUNAS */
+  color: #f1eeee;
+  background-size: cover; /* SERVE PARA DEIXAR A IMAGEM DO TAMANHO CERTO DENTRO DA BOX */
+  border-radius: 5px;
+}
+
+
+.container :hover{
+  scale: 1.1;
+  transition: 0.8s;
+}
+.span-col {
+  grid-column: span 2; /* 2 COLUNAS */
+}
+
+.span-row {
+  grid-row: span 2; /* 2 LINHAS */
+}
+
+.bg1 {
+  background-image: url(../images/bg1.jpg); /* SEPRE COLOCAR ../ PARA APARECER AS IMAGENS QUE ESTAO NA PASTA */
+}
+
+.bg2 {
+  background-image: url(../images/bg2.jpg); 
+}
+
+.bg3 {
+  background-image: url(../images/bg3.jpg); 
+}
+
+.bg4 {
+  background-image: url(../images/bg4.jpg); 
+
+}

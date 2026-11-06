@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <main class="container">
+
+        <section class="border rounded-2 p-4 my-3  bg-primary text-light">
+    <h2 class="my-2">Digite a marca ou o modelo</h2>
+    <form id="busca" name="busca" method="get" action="" class="mb-1">
+        <div class="d-flex gap-2">
+            <input type="search" id="txtBusca" name="txtBusca" class="form-control py-3 me-1"
+                placeholder="Digite no mínimo 03 caracteres...." required>
+            <button type="submit" class="btn btn-outline-light btn-lg">Pesquisar</button>
+        </div>
+    </form>
+    
+    <div id="buscasRealizadas" class="text-light mb-5"></div>
+    <hr>
+    <h2 class="mb-2">Filtros básicos</h2>
+    <div class="d-flex flex-wrap justify-content-center justify-content-sm-start gap-3 mb-4">
+        <button class="btn btn-outline-light filtro" data-filtro="antes2000">
+            Fabricados antes de 2000
+        </button>
+        <button class="btn btn-outline-light filtro" data-filtro="depois2010">
+            Fabricados depois de 2010
+        </button>
+        <button class="btn btn-outline-light filtro" data-filtro="acima120000">
+            Valor acima de R$ 120.000
+        </button>
+        <button class="btn btn-outline-light filtro" data-filtro="vermelhos">
+            Carros Vermelhos
+        </button>
+        <button class="btn btn-outline-light filtro" data-filtro="todos">
+            Mostrar Todos
+        </button>
+
+    </div>
+</section>
+
+        <h2 class="display-2 my-4">Relação de Carros</h2>
+        <section class="row my-4" id="gridCards"></section>
+
+        
+        <section>
+            <h3>Total de Carros Encontrados:
+                <span id="totalCarros"></span>
+            </h3>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <!-- chamada do js que montara os cards -->
+    <script type="module" src="./js/montarFront.js"></script>
+
+
+</body>
+
+</html>

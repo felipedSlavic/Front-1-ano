@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício de erros</title>   
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="display-6 my-5 py-3 px-2 bg-danger text-light rounded">Motos Elétricas</h1>
+
+        <h2 class="mt-4">Dados para o cálculo</h2>
+        <form id="dadosMoto" method="get" action="">
+            <div class="row mb-3">
+
+                <div class="col-md-6 my-3">
+                    <label for="modeloMoto" class="form-label">Modelo da Moto</label>
+                    <input type="text" class="form-control" id="modeloMoto" name="modeloMoto" placeholder="ex: Moto ABCD">
+                </div>
+
+                <div class="col-md-6 my-3">
+                    <label for="tempoCarregamento" class="form-label">Tempo carregamento em horas</label>
+                    <input type="text" class="form-control" id="tempoCarregamento" name="tempoCarregamento" placeholder="ex: 5.5">
+                </div>
+
+                <div class="col-md-6 my-3">
+                    <label for="autonomiaKM" class="form-label">Autonomia (KM)</label>
+                    <input type="text" class="form-control" id="autonomiaKM" name="autonomiaKM" placeholder="ex: 180">
+                </div>
+
+                <div class="col-md-6 my-3">
+                    <label for="kmRodado" class="form-label">KM rodados mês</label>
+                    <input type="text" class="form-control" id="kmRodado" name="kmRodado" placeholder="ex: 2400">
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end">
+                <button type="submit" class="btn btn-outline-danger">Gerar Dados</button>
+            </div>
+        </form>
+
+        <div class="table-responsive my-5">
+            <table class="table text-center" id="dadosMotoTable">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Tempo</th>
+                        <th>Autonomia</th>
+                        <th>Km Rodados</th>
+                        <th>Carregamentos</th>
+                        <th>Gasto</th>
+                    </tr>
+                </thead>
+                <tbody id="motosTable"></tbody>
+            </table>
+        </div>
+    </div>    
+
+    <script type="module" src="./js/montarTabela.js"></script>
+</body>
+</html>

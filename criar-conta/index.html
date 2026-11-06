@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyApp</title>
+    <!-- link para o BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="container my-5" >
+      <div class="bg-primary p-4 mt-3 rounded">
+        <h1 class="display-5 text-light">Criar Conta</h1>
+      </div>
+
+      <!-- PASSAR PARA O BACK (SERVIDOR (JS)) UTILIZAR "NAME" -->
+      <!-- Name para mandar para o servidor -->
+      <!-- Method --> 
+       <!-- GET: As informações ficam em cima, na barra de url -->
+       <!-- PlaceHolder, é um texto que aparece no campo, somente quando não digita, e some quando acionado -->
+        <!-- MINLENGHT E MAXLENGHT: Definem a quantidade miníma e máxima de caracterese, a ser usado respectivamente. -->
+         <!-- REQUIRED: Indica a obrigação de preencher o campo -->
+
+      <form id="criarConta" name="criarConta" method="get" action="">
+
+        <!-- Usar o grid do Bootstrap -->
+        <div class="row my-3">
+
+          <div class="my-3 col-md-6">
+            <label for="usuario"  class="form-label">Usuário</label>
+            <input type="text" id="usuario" name="usuario" class="form-control"
+            placeholder="ex: user1234" minlength="10" maxlength="20" required>
+          </div>
+
+
+          <!-- OBS GRID BOOTSRAO (ESTUDAR) -->
+
+          <div class="my-3 col-md-6">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" id="senha"  name="senha" class="form-control"  
+            placeholder="ex: !@#$abcd"  minlength="8" maxlength="20" required>
+          </div>
+
+          <div class="my-3 col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control"
+            placeholder="ex: seuemail@email.com" maxlength="40" required>
+          </div>
+
+            <div class="my-3 col-md-4">
+                <label for="dataCadastro" class="form-label">Data do Cadastro</label>
+                <input type="date" id="dataCadastro" name="dataCadastro" class="form-control"
+                required>
+
+                <!-- OBS: NÃO É NECESSÁRIO PLACEHOLDER NEM TAMANHO MÁX -->
+                 <!-- outros exemplos de tipos de input: TIME e DATE-TIME-LOCAL, ALÉM DE WEEK e MONTH -->
+            </div>
+
+
+                <!-- DISABLE: Desabilita a possibilidade de selecionar uma opção da caixa de select -->
+                <!-- Imporante usar o "SELECTED" que é usado para selecionar inicialemnte dps desabilitar -->
+                <!-- VALUE: É o indicativo do valor da sua option, serve para correponder a option a aum valor -->
+
+            <div class="my-3 col-md-4">
+                <label for="tipoConta" class="form-label">Tipo da Conta</label>
+                <select name="tipoConta" id="tipoConta" required class="form-select">
+                    <option value="" disabled selected>Selecione sua Conta</option>
+                    <option value="Free">Free</option>
+                    <option value="Vip">Vip</option>
+                    <option value="Premium">Premium</option>
+                </select>
+
+            </div>
+
+
+            <div class="my-4 d-flex justify-content-end">
+            <button type="submit"  class="btn btn-primary btn-lg"> Criar Conta</button>
+            </div>
+
+
+
+
+
+        </div>
+
+      </form>
+
+
+      <!-- tabela com os dados do form -->
+       <!-- THEAD Cabeçalho Geral da minha Tabela-->
+        <!-- tr = Table Row  (linha da tabela), Precisa ser colocada para declarar a maquina que é uma linha-->
+         <!-- th linha do cabeçalho (table head, classifica como a linha geral) -->
+          <!-- Só vai ser possível, montar essas colunas com o tr -->
+           <!-- td = Table Data, a linha para  os dados da tabela -->
+            <!-- (       (tr>td*5{abcd})*5     ) -->
+
+
+            <h4>Contas Cadastradas</h4>
+      <div class="my-4"></div>
+      <table class="table table-striped  table-bordered table-hover text-center">
+        <thead class="table-danger ">
+          <tr>
+            <th> Usuário</th>
+            <th> Senha</th>
+            <th> Email</th>
+            <th> Data Cadastro</th>
+            <th>Tipo de Conta</th>
+          </tr>
+        </thead>
+
+
+        <tbody id="dadosConta"></tbody>
+
+        <tfoot class="table-dark">
+          <tr>
+            <td colspan="5">Dados Atualizados em: </td>
+          </tr>
+        </tfoot>
+      </table>
+
+    </section>
+    <script src="./js/criarconta.js"></script>
+  </body>
+</html>
