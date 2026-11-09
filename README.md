@@ -8,6 +8,7 @@
 </p>
 
 Coleção de exercícios e projetos de front-end desenvolvidos durante o **1° ano de Sistemas de Informação na FIAP**.  
+Exercícios feitos como prático na trilha de aprendizado da minha matéria de Web Standarts - Front End Developer
 Foco em lógica com JavaScript, manipulação do DOM, formulários e renderização dinâmica de dados.
 
 ---
