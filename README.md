@@ -60,7 +60,7 @@ Exercício de estruturação de página com seções de imagem, destaque e naveg
 Landing page institucional para a marca fictícia **XYZSYS**.  
 Desenvolvida com CSS puro, Google Fonts (Montserrat) e layout responsivo.
 
-> `HTML` · `CSS` · `Responsivo` · `Google Fonts`
+> `HTML` · `CSS` · `Responsivo` ·  `Google Fonts` · `FlexBoc`
 
 ---
 
